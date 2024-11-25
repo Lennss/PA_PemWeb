@@ -1,0 +1,126 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: url("../img/header-bg.jpeg") no-repeat center center fixed;
+  color: #333;
+}
+
+.container {
+  background: #000;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
+  padding: 30px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #a57c2e;
+}
+
+.form-container {
+  position: relative;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%; /* Menghindari overflow dengan margin */
+  box-sizing: border-box; /* Pastikan padding tidak melebihi width */
+  font-size: 16px; /* Pastikan teks terlihat proporsional */
+}
+
+button {
+  background: #a57c2e;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #705521;
+}
+
+p {
+  text-align: left;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #a57c2e;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.password-container {
+  position: relative;
+  width: 100%;
+}
+
+.password-container input {
+  width: 100%;
+  padding-right: 40px; /* Extra space for the SVG icon */
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.toggle-password .icon {
+  width: 24px;
+  height: 24px;
+  fill: #666;
+  transition: fill 0.3s;
+}
+
+.toggle-password:hover .icon {
+  fill: #2575fc;
+}
+
+/* Style for the alert messages */
+.alert {
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.alert-error {
+  background-color: red;
+  color: #d4edda;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+}

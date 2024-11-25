@@ -1,0 +1,101 @@
+:root {
+  --primary: #b6895b;
+  --bg: #010101;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+.data {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 1rem;
+  gap: 3rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+.left-side {
+  margin-left: 4px;
+}
+
+#img-produk {
+  width: 20rem;
+  height: 20rem;
+  margin-bottom: 2rem;
+}
+
+#qr-code {
+  width: 7rem;
+  height: auto;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#cnc-btn {
+  background-color: red;
+}
+
+#buy-btn {
+  background-color: var(--primary);
+}
+
+.button {
+  padding: 0.5rem 3rem;
+  margin: 0.5rem;
+  border-radius: 10px;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #a37d58;
+}
